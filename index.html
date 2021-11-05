@@ -351,7 +351,10 @@ var dataPhoto, dataForm, dataFacet=[], dataDoublons={}
             cardBody.append('h4').attr('class','card-title')	  			
                         .text(function(d) { 
                             return d['Votre prénom'].toLowerCase(); 
-                                });
+                                }).on('click',d=>{
+                            let url = "https://github.com/"+d['Votre compte GitHub']+"/AVUN_21-22";
+                            window.open(url)
+                        });
             cardBody.append('h5').attr('class','card-title')	  			
                 .text(function(d) { 
                     return d['Votre nom'].toLowerCase(); 
