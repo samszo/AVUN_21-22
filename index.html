@@ -355,6 +355,9 @@ var dataPhoto, dataForm, dataFacet=[], dataDoublons={}
             cardBody.append('h5').attr('class','card-title')	  			
                 .text(function(d) { 
                     return d['Votre nom'].toLowerCase(); 
+                        }).on('click',d=>{
+                            let url = "https://"+d['Votre compte GitHub']+".github.io/AVUN_21-22/CV";
+                            window.open(url)
                         });
             cardBody.append('h6').text(d => d['Dans quel parcours êtes vous inscris ?']);
             /*
