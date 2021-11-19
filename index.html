@@ -363,6 +363,10 @@ var dataPhoto, dataForm, dataFacet=[], dataDoublons={}
                             window.open(url)
                         });
             cardBody.append('h6').text(d => d['Dans quel parcours êtes vous inscris ?']);
+            cardBody.append('div').text('Modélisation CSV').on('click',d=>{
+                let url = "https://github.com/"+d['Votre compte GitHub']+"/AVUN_21-22/modelisation.csv";
+                window.open(url)
+                });
             /*
             cardBody.append('h5').attr('class','card-title')	  			
                 .text(function(d) { 
