@@ -364,7 +364,11 @@ var dataPhoto, dataForm, dataFacet=[], dataDoublons={}
                         });
             cardBody.append('h6').text(d => d['Dans quel parcours êtes vous inscris ?']);
             cardBody.append('div').style('cursor','pointer').text('Modélisation CSV').on('click',d=>{
-                let url = "https://github.com/"+d['Votre compte GitHub']+"/AVUN_21-22/modelisation.csv";
+                let url = "https://github.com/"+d['Votre compte GitHub']+"/AVUN_21-22/main/modelisation.csv";
+                window.open(url)
+                });
+            cardBody.append('div').style('cursor','pointer').text('Modélisation Tableau').on('click',d=>{
+                let url = "https://"+d['Votre compte GitHub']+".github.io/AVUN_21-22/modelisation.csv";
                 window.open(url)
                 });
             /*
