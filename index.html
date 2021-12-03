@@ -372,6 +372,10 @@ var dataPhoto, dataForm, dataFacet=[], dataDoublons={}
                 let url = "https://"+d['Votre compte GitHub']+".github.io/AVUN_21-22/modelisation.csv";
                 window.open(url)
                 });
+            cardBody.append('div').style('cursor','pointer').text('Modèle SVG').on('click',d=>{
+                let url = "https://"+d['Votre compte GitHub']+".github.io/AVUN_21-22/modelisation.svg";
+                window.open(url)
+                });
             /*
             cardBody.append('h5').attr('class','card-title')	  			
                 .text(function(d) { 
